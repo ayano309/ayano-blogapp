@@ -1,10 +1,10 @@
 class HomeController < ApplicationController
     def index
         
-        @title ='ayako'
+        @article =Article.first
     end
 
     def about
-        
+
     end
 end
