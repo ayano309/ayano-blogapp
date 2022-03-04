@@ -3,4 +3,8 @@ class HomeController < ApplicationController
         
         @title ='ayako'
     end
+
+    def about
+        
+    end
 end
