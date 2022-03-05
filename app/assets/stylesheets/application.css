@@ -182,6 +182,10 @@ body {
   color: #616161;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 16px 16px;
   width: 100%;
