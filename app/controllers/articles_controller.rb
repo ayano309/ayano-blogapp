@@ -12,5 +12,5 @@ class ArticlesController < ApplicationController
         @article =Article.new
     end
 
-    pり
+    
 end
