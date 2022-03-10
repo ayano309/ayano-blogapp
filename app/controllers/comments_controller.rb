@@ -7,7 +7,6 @@ class CommentsController < ApplicationController
     def create
         article =Article.find(params[:article_id])
         @comment = article.comments.build(comment_params)
-        @comment.save!
         if @comment.save
             redirect_to article_path(article), notice: 'コメントを追加'
         else
