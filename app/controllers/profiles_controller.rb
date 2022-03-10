@@ -22,7 +22,7 @@ class ProfilesController < ApplicationController
     def profile_params
         params.require(:profile).permit(
         :nickname,
-        :introductio,
+        :introduction,
         :gender,
         :birthday,
         :subscribed

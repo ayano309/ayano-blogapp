@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2022_03_09_093338) do
   create_table "profiles", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "nickname"
-    t.text "introductio"
+    t.text "introduction"
     t.integer "gender"
     t.date "birthday"
     t.boolean "subscribed", default: false

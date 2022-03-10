@@ -2,15 +2,15 @@
 #
 # Table name: profiles
 #
-#  id          :integer          not null, primary key
-#  birthday    :date
-#  gender      :integer
-#  introductio :text
-#  nickname    :string
-#  subscribed  :boolean          default(FALSE)
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  user_id     :integer          not null
+#  id           :integer          not null, primary key
+#  birthday     :date
+#  gender       :integer
+#  introduction :text
+#  nickname     :string
+#  subscribed   :boolean          default(FALSE)
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  user_id      :integer          not null
 #
 # Indexes
 #
