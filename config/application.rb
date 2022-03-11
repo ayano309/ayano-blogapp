@@ -16,6 +16,9 @@ module AyanoBlogapp
       Dotenv::Railtie.load
     end
 
+    Bundler.require(*Rails.groups)
+    Dotenv::Railtie.load
+
     config.generators do |g|  # ここから追記
       g.assets false          # CSS, JavaScriptファイル生成せず
       g.skip_routes false     # trueならroutes.rb変更せず、falseなら通常通り変更
