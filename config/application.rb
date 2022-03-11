@@ -11,6 +11,9 @@ module AyanoBlogapp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    Bundler.require(*Rails.groups)
+    Dotenv::Railtie.load
+
     config.generators do |g|  # ここから追記
       g.assets false          # CSS, JavaScriptファイル生成せず
       g.skip_routes false     # trueならroutes.rb変更せず、falseなら通常通り変更

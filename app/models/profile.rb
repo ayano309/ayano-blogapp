@@ -2,7 +2,7 @@
 #
 # Table name: profiles
 #
-#  id           :integer          not null, primary key
+#  id           :bigint           not null, primary key
 #  birthday     :date
 #  gender       :integer
 #  introduction :text
@@ -10,7 +10,7 @@
 #  subscribed   :boolean          default(FALSE)
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
-#  user_id      :integer          not null
+#  user_id      :bigint           not null
 #
 # Indexes
 #
@@ -25,13 +25,12 @@ class Profile < ApplicationRecord
         return '不明' unless birthday.present?
         years = Time.zone.now.year - birthday.year
         days = Time.zone.now.yday - birthday.yday
-    
+
         if days < 0
             "#{years - 1}歳"
         else
             "#{years}歳"
         end
     end
-    
 
 end

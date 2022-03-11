@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 jon = User.create!(email:'john@example.com',password:'password')
 emily = User.create!(email:'emily@example.com',password:'password')
 
@@ -22,4 +21,3 @@ end
         content:Faker::Lorem.sentence(word_count: 100)
     )
     end
-    
