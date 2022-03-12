@@ -15,7 +15,7 @@ module AyanoBlogapp
       Bundler.require(*Rails.groups)
       Dotenv::Railtie.load
     end
-
+    
     
     config.generators do |g|  # ここから追記
       g.assets false          # CSS, JavaScriptファイル生成せず
