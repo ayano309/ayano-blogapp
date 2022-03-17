@@ -16,8 +16,8 @@ $back-icon-size :16px;
   }
 
 
-  &_loginBtn {
-    background-color: rgba(0, 89, 255, 0.226);
+  a.header_loginBtn {
+    background-color: white;
     height: $avatar-size;
     border-radius: 8px;
     font-size: 12px;
