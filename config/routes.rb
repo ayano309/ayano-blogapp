@@ -5,9 +5,12 @@ Rails.application.routes.draw do
 
   resources :articles do
     resources :comments, only: [:new, :create]
-    resource :like, only: [:create, :destroy]
 
+    resource :like, only: [:create, :destroy]
   end
+
+  resources :accounts, only: [:show]
+
   resource :profile, only: [:show, :edit, :update]
   resources :favorites, only: [:index]
 end
