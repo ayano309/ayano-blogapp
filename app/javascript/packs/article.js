@@ -27,7 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-
+    $('.show-comment-form').on('click', () => {
+        $('.show-comment-form').addClass('hidden')
+        $('.comment-text-area').removeClass('hidden')
+    })
+    
 
     axios.get(`/articles/${articleId}/like`)
         .then((response) => {
