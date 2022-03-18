@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataset = $('#article-show').data()
     const articleId = dataset.articleId
 
-    axios.get(`/api/articles/${articleId}/comments`)
+    axios.get(`/articles/${articleId}/comments`)
         .then((response) => {
             const comments = response.data
             comments.forEach((comment) => {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!content) {
             window.alert('コメントを入力してください')
             } else {
-            axios.post(`/api/articles/${articleId}/comments`, {
+            axios.post(`/articles/${articleId}/comments`, {
                 comment: {content: content}
             })
                 .then((res) => {
@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 $('#comment_content').val('')
                 })
             }
-    })
+        })
     
 
-    axios.get(`/api/articles/${articleId}/like`)
+    axios.get(`/articles/${articleId}/like`)
         .then((response) => {
             const hasLiked = response.data.hasLiked
             handleHeartDisplay(hasLiked)
