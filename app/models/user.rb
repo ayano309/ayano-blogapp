@@ -38,7 +38,7 @@ class User < ApplicationRecord
 
   def has_written?(article)
     articles.exists?(id: article.id)
-    end
+  end
 
   def has_liked?(article)
     likes.exists?(article_id: article.id)

@@ -19,3 +19,4 @@ class Api::CommentsController < Api::ApplicationController
         params.require(:comment).permit(:content)
     end
 end
+
